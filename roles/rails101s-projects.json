@@ -1,0 +1,18 @@
+{
+  "name": "rails101s-project",
+  "description": "Run projects",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[rails101s_cookbook::default]"
+  ],
+  "env_run_lists": {
+
+  }
+}
