@@ -1,8 +1,19 @@
 {
+  "mysql": {
+    "server_root_password": "your_mysql_password"
+  },
   "run_list": [
-
+    "role[server]",
+    "role[nginx-server]",
+    "role[mysql-server]",
+    "role[rails-app]",
+    "role[rails101s-projects]"
   ],
   "automatic": {
     "ipaddress": "10.10.10.10"
-  }
+  },
+  "projects":
+  [
+    { "name" : "rails101s", "env" : "production", "enabled" : true }
+  ]
 }
