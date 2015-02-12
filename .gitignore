@@ -1,1 +1,5 @@
-/cookbooks/
+cookbooks/
+.vagrant
+data_bags/users/*.json
+nodes/*.json
+nodes/10.10.10.10.json
